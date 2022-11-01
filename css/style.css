@@ -1,0 +1,351 @@
+/* --------- ОБНУЛЕННЯ СТИЛІВ ТЕГІВ ------------ */
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+   border: none;
+   box-sizing: border-box;
+}
+
+li {
+   list-style: none;
+}
+
+a {
+   color: inherit;
+}
+
+a:link,
+a:visited {
+   text-decoration: none;
+}
+
+a:hover {
+   text-decoration: none;
+}
+
+img {
+   vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-weight: inherit;
+   font-size: inherit;
+}
+
+input,
+button,
+textarea {
+   font-family: inherit;
+   font-size: inherit;
+}
+
+button {
+   cursor: pointer;
+   color: inherit;
+   background-color: inherit;
+}
+
+html,
+body {
+   height: 100%;
+}
+
+.wrapper>main {
+   flex-grow: 1;
+}
+
+.wrapper {
+   overflow: hidden;
+   min-height: 100%;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+}
+
+[class*="__container"] {
+   max-width: 1260px;
+   margin: 0 auto;
+   padding: 0px 15px;
+}
+
+/*-----------------Дополнительные Шрифты-------------------------------*/
+
+
+/*------------------BODY------------------------------*/
+body {
+   font-family: 'Lato';
+   font-style: normal;
+   font-weight: 400;
+   color: #424551;
+}
+
+
+/*---------*/
+.page {}
+
+.page__main {}
+
+/*---------*/
+
+/*------------------Header------------------------*/
+.header {
+   padding: 20px 0;
+}
+
+.header__decoration {}
+
+.header__container {
+   display: flex;
+   align-items: center;
+   gap: 60px;
+}
+
+.header__logo {}
+
+.header__menu {
+   flex-grow: 1;
+}
+
+.menu {}
+
+.menu__list {
+   display: flex;
+   flex-wrap: wrap;
+   column-gap: 40px;
+   row-gap: 10px;
+}
+
+.menu__item {}
+
+.menu__link {
+   font-weight: 700;
+}
+
+.menu__link:hover {
+   text-decoration: underline;
+}
+
+.header__actions {}
+
+.actions-header {
+   flex-shrink: 0;
+   display: flex;
+   align-items: center;
+   gap: 36px;
+   flex-wrap: wrap;
+}
+
+.actions-header__button {}
+
+.actions-header-header__auth {
+   background: url('../img/icon/User.svg') left no-repeat;
+   padding: 0px 0px 0px 24px;
+   font-weight: 700;
+   line-height: 1.25;
+}
+
+.actions-header-header__auth:hover span {
+   text-decoration: underline;
+}
+
+/*=====================MAIN=====================================*/
+.main-block {
+   padding: 200px 0px 80px 0px;
+}
+
+.main-block__container {
+   z-index: 2S;
+}
+
+.main-block__body {
+   gap: 105px;
+   display: flex;
+}
+
+.main-block__illustration {
+   padding-top: 60px;
+   max-width: 100%;
+}
+
+.main-block__content-form {}
+
+.form-content {}
+
+.form-conten__label {
+   text-transform: uppercase;
+   line-height: 150%;
+   letter-spacing: 1px;
+   font-weight: 700;
+   color: #1E212C;
+}
+
+.form-conten__title {
+   font-weight: 900;
+   font-size: 46px;
+   line-height: 130%;
+   color: #1E212C;
+   margin-bottom: 40px;
+}
+
+.form-conten__name-form {
+   margin-bottom: 24px;
+}
+
+.form-name {
+   display: flex;
+   gap: 25px;
+}
+
+.form-name__first-name {}
+
+.name-first {
+   display: flex;
+   flex-direction: column;
+}
+
+.text {
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 160%;
+   color: #424551;
+}
+
+.name-first__first-text {
+   margin-bottom: 8px;
+}
+
+.name-first__input {}
+
+.input-container {
+   padding-left: 16px;
+   width: 340px;
+   height: 52px;
+   background: #FFFFFF;
+   border: 1px solid #D7DADD;
+   border-radius: 4px;
+}
+
+.form-name__last-name {}
+
+.name-last {
+   display: flex;
+   flex-direction: column;
+}
+
+.name-last__last-text {
+   margin-bottom: 8px;
+}
+
+.name-last__input {}
+
+.form-content__email-phone {
+   margin-bottom: 24px;
+}
+
+.phone-email {
+   display: flex;
+   gap: 25px;
+}
+
+.phone-email__email {}
+
+.email {
+   display: flex;
+   flex-direction: column;
+}
+
+.email__text {
+   margin-bottom: 8px;
+}
+
+.email__input {}
+
+.phone-email__phone {}
+
+.phone {
+   display: flex;
+   flex-direction: column;
+}
+
+.phone__text {
+   margin-bottom: 8px;
+}
+
+.phone__input {}
+
+.form-conten__message-form {}
+
+.form-message {}
+
+.form-message__content {
+   display: flex;
+   flex-direction: column;
+}
+
+.form-message__text {
+   margin-bottom: 8px;
+}
+
+.form-message__textarea {
+   padding-top: 12px;
+   max-width: 100%;
+   width: 705px;
+   height: 128px;
+}
+
+.form-content__confirme {
+   margin-top: 48px;
+   gap: 50px;
+   display: flex;
+   margin-bottom: 48px;
+}
+
+.form-content__text-check {
+   position: relative;
+}
+
+.check-text {}
+
+.check-text__input {
+   position: absolute;
+   width: 0;
+   height: 0;
+   opacity: 0;
+}
+
+.check-text__input:checked+.check-text__label::before {
+   background: #FF3F3A url('../img/Body/check.svg') center / 70% no-repeat;
+}
+
+.check-text__label::before {
+   content: "";
+   flex: 0 0 16px;
+   width: 16px;
+   height: 16px;
+   border: 1px solid #FF3F3A;
+   border-radius: 3px;
+
+}
+
+.check-text__label {
+   cursor: pointer;
+   display: inline-flex;
+   gap: 12px;
+}
+
+.check-text__text {
+   line-height: 160%;
+   color: #424551;
+   align-self: center;
+}
+
+.form-content__button span {
+   padding: 0px 100px;
+}
